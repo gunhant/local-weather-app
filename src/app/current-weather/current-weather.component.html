@@ -1,16 +1,16 @@
 <div>
   <div>
-    <span>{{current.city}}, {{current.country}}</span>
+    <span>{{current?.city}}, {{current?.country}}</span>
     <br/>
-    <span>{{current.date | date:'fullDate'}}</span>
+    <span>{{current?.date | date:'fullDate'}}</span>
   </div>
   <br/>
   <div>
     <img [src]='current.image'>
     <br/>
     <br/>
-    <span>{{current.temperature | number: '1.0-0'}}</span>
+    <span><h1>{{current?.temperature | number: '1.0-0'}} F</h1></span>
   </div>
   <br/>
-  <div>{{current.description}}</div>
+  <div>{{current?.description}}</div>
 </div>
