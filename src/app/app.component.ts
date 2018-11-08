@@ -10,6 +10,9 @@ import { Component } from '@angular/core';
         <span>LocalCast Weather</span>
       </mat-toolbar>
       <div style="text-align:center"><h1>Your city, your forecast, right now!</h1></div>
+      <div fxLayoutAlign="center">
+        <app-city-search></app-city-search>
+      </div>
       <div fxLayout="row">
         <div fxFlex></div>
         <div fxFlex="300px">
